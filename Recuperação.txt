@@ -1,0 +1,27 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+ 
+int main()
+{
+  float gdb;
+  vector<float> gdb2;
+  cout << "Digite um numero  : ";
+  cin >> gdb;
+  float typed = gdb+1;
+  
+  while(typed > gdb)
+  {
+  gdb = typed;
+  cout << "Digite outro Numero maior que o antecessor (" << gdb << ") : ";
+  cin >> typed;
+  gdb2.push_back(typed);
+  for (size_t i = 0; i < gdb2.size();i++)
+    {
+    cout << gdb2[i] << ", ";
+    }
+  cout << endl;
+  }
+  cout << "voce digitou um numero menor ou igual";
+
+}
